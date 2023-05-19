@@ -20,7 +20,7 @@ export default {
 
 <template>
     <header>
-        <div class="contents">
+        <div class="container">
             <img :src="getImagePath(logoImgName)" alt="" />
             <NavBar />
         </div>
@@ -34,11 +34,11 @@ header {
     align-items: center;
     height: 100px;
 
-    .contents {
+    .container {
         display: flex;
         justify-content: space-between;
-        width: 1200px;
-        margin-inline: auto;
+        align-items: center;
+        height: 100%;
 
         img {
             height: 5rem;

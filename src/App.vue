@@ -18,4 +18,6 @@ export default {
     <AppFooter />
 </template>
 
-<style scoped></style>
+<style lang="scss">
+@import "bootstrap/scss/bootstrap";
+</style>

@@ -60,27 +60,37 @@ export default {
 </script>
 
 <template>
-    <nav>
+    <div>
         <ul>
             <li v-for="menuItem in menuData" :key="menuItem.name" class="active">
                 <a :href="menuItem.src">{{ menuItem.name }}</a>
             </li>
         </ul>
-    </nav>
+    </div>
 </template>
 
 <style lang="scss" scoped>
+div {
+    height: 100%;
+}
+
 ul {
     display: flex;
     list-style-type: none;
+    margin: 0;
+    height: 100%;
 
     li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 1rem;
+        font-size: .8rem;
     }
 
     .active {
         color: blue;
-        border-bottom: 7px solid blue;
+        border-bottom: 5px solid blue;
 
     }
 

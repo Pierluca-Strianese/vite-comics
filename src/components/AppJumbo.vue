@@ -1,6 +1,5 @@
 <script>
 export default {
-    name: "AppJumbo",
     data() {
         return {
             jumbo: "src/assets/img/jumbotron.jpg"

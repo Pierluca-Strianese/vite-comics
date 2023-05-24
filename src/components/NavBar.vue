@@ -62,8 +62,8 @@ export default {
 <template>
     <div>
         <ul>
-            <li v-for="menuItem in menuData" :key="menuItem.name" class="active">
-                <a :href="menuItem.src">{{ menuItem.name }}</a>
+            <li v-for="(menuItem, i) in menuData" :key="i">
+                <a :href="menuItem.src" :class="{ active: menuItem.active }">{{ menuItem.name }}</a>
             </li>
         </ul>
     </div>
@@ -76,26 +76,28 @@ div {
 
 ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     height: 100%;
 
     li {
         display: flex;
+        padding-inline: 15px;
+        height: 100%;
         align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        font-size: .8rem;
-    }
 
-    .active {
-        color: blue;
-        border-bottom: 5px solid blue;
+        &:hover,
+        &.active {
+            border-bottom: 4px solid blue;
+            cursor: pointer;
+        }
 
-    }
-
-    a {
-        text-decoration: none;
+        a {
+            color: black;
+            text-decoration: none;
+        }
     }
 }
 </style>

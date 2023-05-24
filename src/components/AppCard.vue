@@ -34,5 +34,9 @@ export default {
         text-align: left;
         color: white;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 </style>

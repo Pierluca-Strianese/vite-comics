@@ -1,6 +1,6 @@
 <script>
 import AppFooter from './components/AppFooter.vue';
-import AppHeader from './components/AppHeader.vue';
+import AppHeader from './components/appHeader.vue';
 import AppProducts from './components/AppProducts.vue';
 import AppJumbo from './components/AppJumbo.vue'
 
